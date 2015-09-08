@@ -1,0 +1,19 @@
+          read arguments
+          
+          construct empty collection
+            filename
+            filetype / mimetype
+            size?
+          
+            for each arguments
+              open file
+              convert to base64
+              append to collection
+         
+           
+         for item in collection
+          
+          write
+            boundary (default to a constant)
+            content type (infer from filename)
+            encoding (default to base64)
