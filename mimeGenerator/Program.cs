@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using MimeTypes;
+
 namespace mimeGenerator
 {
     public class Generator
@@ -16,5 +18,11 @@ namespace mimeGenerator
         {
             return Convert.ToBase64String(bytes);
         }
+
+        public static string getMime(string extension)
+        {
+            return MimeTypes.MimeTypeMap.GetMimeType(extension);
+        }
+
     }
 }

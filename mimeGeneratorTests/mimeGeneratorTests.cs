@@ -19,5 +19,12 @@ namespace mimeGeneratorTests
             string result = mimeGenerator.Generator.getBase64(input);
             Assert.AreEqual("bXl0ZXh0ZmlsZQ==", result);
         }
+
+        [Test]
+        public void getMime_returns_imagetext_for_txt()
+        {
+            string result = mimeGenerator.Generator.getMime("txt");
+            Assert.AreEqual("text/plain", result);
+        }
     }
 }
