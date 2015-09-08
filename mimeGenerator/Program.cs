@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace mimeGenerator
 {
-    class Program
+    public class Generator
     {
         static void Main(string[] args)
         {
+        }
+
+        public static string getBase64(Byte[] bytes)
+        {
+            return Convert.ToBase64String(bytes);
         }
     }
 }
