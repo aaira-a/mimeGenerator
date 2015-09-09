@@ -22,11 +22,15 @@ namespace MimeGeneratorTests
             Assert.AreEqual("bXl0ZXh0ZmlsZQ==", result);
         }
 
-        [Test]
-        public void getMime_returns_imagetext_for_txt()
+        [TestCase("txt", "text/plain")]
+        [TestCase("jpg", "image/jpeg")]
+        [TestCase("png", "image/png")]
+        [TestCase("json", "application/json")]
+        [TestCase("xml", "text/xml")]
+        public void getMime_returns_mime_for_extension(string input, string expected)
         {
-            string result = Generator.getMime("txt");
-            Assert.AreEqual("text/plain", result);
+            string result = Generator.getMime(input);
+            Assert.AreEqual(expected, result);
         }
     }
 }

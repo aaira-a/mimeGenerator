@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mimeGenerator", "mimeGenerator\mimeGenerator.csproj", "{E49059C8-F897-4647-890C-E8C7A44FE47E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimeGenerator", "mimeGenerator\MimeGenerator.csproj", "{E49059C8-F897-4647-890C-E8C7A44FE47E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mimeGeneratorTests", "mimeGeneratorTests\mimeGeneratorTests.csproj", "{180ED15A-F928-4CD8-8C66-B60941E8CB99}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimeGeneratorTests", "mimeGeneratorTests\MimeGeneratorTests.csproj", "{180ED15A-F928-4CD8-8C66-B60941E8CB99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

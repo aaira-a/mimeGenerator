@@ -58,9 +58,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\mimeGenerator\mimeGenerator.csproj">
+    <ProjectReference Include="..\mimeGenerator\MimeGenerator.csproj">
       <Project>{e49059c8-f897-4647-890c-e8c7a44fe47e}</Project>
-      <Name>mimeGenerator</Name>
+      <Name>MimeGenerator</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
