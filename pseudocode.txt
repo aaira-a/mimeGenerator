@@ -17,3 +17,9 @@
             boundary (default to a constant)
             content type (infer from filename)
             encoding (default to base64)
+
+
+
+
+1 - create mailmessage / mime from filesystem (console app)
+2 - parse mailmessage/mime from post/json

@@ -12,6 +12,7 @@ namespace MimeGenerator
     {
         static void Main(string[] args)
         {
+            MM.CreateMessageWithAttachment();
         }
 
         public static string getBase64(Byte[] bytes)
@@ -25,4 +26,5 @@ namespace MimeGenerator
         }
 
     }
+
 }
