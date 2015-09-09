@@ -7,23 +7,25 @@ using System.Threading.Tasks;
 
 using NUnit.Framework;
 
-namespace mimeGeneratorTests
+using MimeGenerator;
+
+namespace MimeGeneratorTests
 {
     [TestFixture]
-    public class mimeGeneratorTests
+    public class MimeGeneratorTests
     {
         [Test]
         public void getBase64_returnsB64_fromBytes()
         {
             Byte[] input = File.ReadAllBytes("..\\..\\fixtures\\a.txt");
-            string result = mimeGenerator.Generator.getBase64(input);
+            string result = Generator.getBase64(input);
             Assert.AreEqual("bXl0ZXh0ZmlsZQ==", result);
         }
 
         [Test]
         public void getMime_returns_imagetext_for_txt()
         {
-            string result = mimeGenerator.Generator.getMime("txt");
+            string result = Generator.getMime("txt");
             Assert.AreEqual("text/plain", result);
         }
     }

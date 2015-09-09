@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using MimeTypes;
 
-namespace mimeGenerator
+namespace MimeGenerator
 {
     public class Generator
     {
