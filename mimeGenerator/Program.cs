@@ -17,8 +17,16 @@ namespace MimeGenerator
             {
                 if (File.Exists(args[0])) 
                 {
+                    string fileName = Path.GetFileName(args[0]);
+                    string extension = Path.GetExtension(args[0]);
+
                     Byte[] bytes = File.ReadAllBytes(args[0]);
-                    Console.WriteLine(getBase64(bytes));
+                    string base64 = getBase64(bytes);
+                    string mime = getMime(extension);
+
+                    Console.WriteLine("\nFilename: " + fileName);
+                    Console.WriteLine("\nMime: " + mime);
+                    Console.WriteLine("\nBase64: \n\n" + base64);
                 }
             }
         }
