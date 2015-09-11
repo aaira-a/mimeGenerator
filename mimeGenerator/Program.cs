@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,14 @@ namespace MimeGenerator
     {
         static void Main(string[] args)
         {
-            MM.CreateMessageWithAttachment();
+            if (args != null && args.Length > 0) 
+            {
+                if (File.Exists(args[0])) 
+                {
+                    Byte[] bytes = File.ReadAllBytes(args[0]);
+                    Console.WriteLine(getBase64(bytes));
+                }
+            }
         }
 
         public static string getBase64(Byte[] bytes)
